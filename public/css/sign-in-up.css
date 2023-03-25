@@ -1,0 +1,61 @@
+.sign-in {
+    max-width: 22%;
+    margin: auto;
+    margin-top: 30px;
+}
+.form {
+    padding: 20px;
+}
+.form-info {
+    padding-top: 20px;
+}
+.form-group{
+    padding-left: 5px;
+}
+.form1{
+    height: auto;
+    padding: 20px;
+}
+.form1 h2{
+    text-align: center;
+}
+.form h2 {
+    text-align: center;
+}
+
+/*form input {*/
+/*    width: 100%;*/
+/*    border: 1px solid #eee;*/
+/*    padding: 10px;*/
+/*    border-radius: 10px;*/
+/*}*/
+
+form input:focus {
+    border: 1px solid #eee;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+input#checkbox-1-1 {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+
+
+
+.sign-form {
+    display: grid;
+    justify-items: center;
+    box-shadow: 0 0px 9px 3px rgb(0 0 0 / 8%);
+    border-radius: 20px;
+    align-items: center;
+}
+
+img.sign-i {
+    width: 250px;
+}

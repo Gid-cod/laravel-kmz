@@ -1,0 +1,190 @@
+
+
+
+/* @media (min-width:768px) {
+    .row {
+        display: grid;
+        grid-template-columns: none;
+    }
+}
+
+@media (min-width:1600px) {
+    .row {
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+} */
+
+.product-list {
+    width: 345px;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    height: 690px;
+}
+
+.product {
+    border: 1px solid #eee;
+}
+.card-content p {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+h4 {
+    margin: 0;
+}
+
+h4 a {
+    text-decoration: none;
+    color: black;
+}
+
+.group-titel {
+    border: 1px solid #eee;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-tovar {
+    width: 310px;
+    height: 336px;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    background-color: #eee;
+}
+.image{
+    width: 80%;
+}
+
+.tov-content {
+    display: flex;
+    align-items: center;
+    height: 140px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.tov-content h2 a {
+    text-decoration: none;
+    color: #194485;
+}
+
+.card-tov {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.zacaz {
+    width: 277px;
+    height: 46px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    outline: 0 none;
+}
+
+.card-tov:hover .zacaz {
+    visibility: visible;
+    opacity: 1;
+}
+
+a.f1 {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: gainsboro;
+    color: darkred;
+}
+
+.f2 a {
+    text-decoration: none;
+    color: black;
+}
+
+a.f3 {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: gainsboro;
+    color: dodgerblue;
+}
+
+.f2 {
+    height: 46px;
+    display: flex;
+    align-items: center;
+    width: 180px;
+    border-radius: 10px;
+    justify-content: center;
+    border: 2px solid #eee;
+}
+
+.new-tovar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    margin-top: 10px;
+    gap: 6px;
+    height: 450px;
+}
+
+p.btn {
+    padding: 12px;
+}
+
+.top-menu p {
+    text-decoration: none;
+    color: #5198c6;
+    font-size: 23px;
+    cursor: default;
+    margin: 0px;
+    border-radius: 15px;
+}
+
+.top-menu {
+    border: 1px solid #eee;
+    border-radius: 15px;
+    background-color: #eee;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.user-info {
+    max-width: 350px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #eee;
+}
+
+.user-date img {
+    width: 100px;
+    border-radius: 50%;
+}
+.user-date {
+    display: flex;
+    align-items: center;
+}
+.user-date h3 {
+    padding: 0 20px;
+    font-size: 25px;
+}
+.user-phone,.user-email {
+    display: flex;
+    align-items: center;
+}
+.user-tel-emal  p:nth-child(2) {
+
+    padding: 0 20px;
+}

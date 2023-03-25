@@ -1,0 +1,46 @@
+.flex-wrap {
+    gap: 10px;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    width: 30px;
+    height: 40px;
+    border-radius: 10px;
+}
+.bg-primary {
+    background-color: #192935!important;
+}
+.bg-info {
+    background-color: #192935!important;
+}
+.carousel {
+    position: relative;
+    height: 500px;
+}
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+.carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    height: 500px;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform .6s ease-in-out;
+    transition: transform .6s ease-in-out;
+    transition: transform .6s ease-in-out,-webkit-transform .6s ease-in-out;
+}
+.card-img{
+    width: 75%;
+    margin: 0 12.5%;
+}
+.header-logo{
+    width: 277px;
+    height: 46px;
+}
+
