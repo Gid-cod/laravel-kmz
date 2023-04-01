@@ -7,13 +7,17 @@ use App\Models\Category;
 use App\Models\Item;
 use App\Models\Order;
 use App\Models\User;
-
+use App\Models\News;
 class AdminController extends Controller
 {
     public function index() {
         return view('admin.index');
     }
 
+    public function news(){
+        $news = News::get();
+        return view('admin.news.index', compact('news'));
+    }
     public function items() {
         $items = Item::get();
         return view('admin.items.index', compact('items'));
@@ -39,7 +43,14 @@ class AdminController extends Controller
     public function categoriesCreate() {
         return view('admin.categories.create');
     }
-
+    public function newsCreate() {
+        $categories = Category::get();
+        return view('admin.news.create', compact('categories'));
+    }
+    public function newsUpdate(News $news, Request $request) {
+        $categories = Category::get();
+        return view('admin.news.edit', compact('news', 'categories'));
+    }
     public function itemsCreate() {
         $categories = Category::get();
         return view('admin.items.create', compact('categories'));

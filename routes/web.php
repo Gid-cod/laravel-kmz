@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AdminController;
@@ -23,8 +24,11 @@ use App\Http\Controllers\PageController;
 // Главная
 Route::get('/', [PageController::class, 'index'])->name('home');
 Route::get('/location', [PageController::class, 'location'])->name('location');
+Route::get('/dealers', [PageController::class, 'dealers'])->name('dealers');
+Route::get('/about', [PageController::class, 'about'])->name('about');
 Route::get('/cart', [CartController::class, 'index'])->name('cart');
 Route::get('/orders', [OrderController::class, 'index'])->name('orders');
+Route::get('/new', [PageController::class, 'new'])->name('new');
 Route::get('/list', [PageController::class, 'list'])->name('list');
 Route::get('/list/{item}', [PageController::class, 'show'])->name('show');
 
@@ -62,7 +66,16 @@ Route::middleware('auth')->group(function() {
 
                 Route::get('/delete/{category}', [CategoryController::class, 'delete'])->name('admin.categories.delete');
             });
+           Route::prefix('news')->group(function() {
+               Route::get('/', [AdminController::class, 'news'])->name('admin.news.index');
 
+               Route::get('/create', [AdminController::class, 'newsCreate'])->name('admin.news.createPage');
+               Route::post('/create', [NewsController::class, 'create'])->name('admin.news.create');
+
+               Route::get('/edit/{news}', [AdminController::class, 'NewsUpdate'])->name('admin.news.updatePage');
+               Route::post('/edit/{news}', [NewsController::class, 'edit'])->name('admin.news.edit');
+               Route::get('/delete/{news}', [NewsController::class, 'delete'])->name('admin.news.delete');
+           });
             Route::prefix('items')->group(function() {
                 Route::get('/', [AdminController::class, 'items'])->name('admin.items.index');
 

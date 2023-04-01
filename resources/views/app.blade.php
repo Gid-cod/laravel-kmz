@@ -5,76 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Kmz.ru - @yield('title')</title>
-
+    <link rel="shortcut icon" href="public/img/icons.png" type="image/png">
     <!-- Fonts -->
-{{--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"--}}
-{{--          integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">--}}
     <link rel="stylesheet" href="public/css/style.css">
     <link rel="stylesheet" href="public/css/style2.css">
     <link rel="stylesheet" href="public/css/contact.css">
     <link rel="stylesheet" href="public/css/sign-in-up.css">
-    <link rel="stylesheet" href="public/css/vmzoomer.css">
-    <link rel="stylesheet" href="public/css/catalog.css">
-    <link rel="stylesheet" href="{{asset('public/css/item.css')}}">
-    <link rel="stylesheet" href="{{asset('public/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/styles.css')}}">
+    <link rel="stylesheet" href="{{asset('css/fontello.css')}}">
+    <link rel="stylesheet" href="{{asset('css/catalog.css')}}">
+    <link rel="stylesheet" href="{{asset('css/item.css')}}">
+    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
+
 
 </head>
-<body>
-<nav class="navbar navbar-expand  navbar-dark bg-primary">
+<body class="d-flex flex-column h-100">
+<nav class="navbar navbar-expand  navbar-dark bg">
     <div class="container-fluid w-75">
-        <a class="navbar-brand" href="{{route('home')}}"><img class="header-logo" src="public/img/Ресурс%204.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll"
-                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <a class="navbar-brand" href="{{route('home')}}"><img class="header-logo" src="{{asset('img/Ресурс%204.png')}}"
+                                                              alt="logo"></a>
         <div class="collapse navbar-collapse" id="navbarScroll">
             <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
                 <li class="nav-item active">
-                    <a class="nav-link active" aria-current="page" href="{{route('home')}}">О нас</a>
+                    <a class="nav-link active" aria-current="page" href="{{route('home')}}">Главная</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="{{route('location')}}">Где нас найти?</a>
+                    <a class="nav-link" href="{{route('about')}}">О компании</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('new')}}">Новости</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('list')}}">Каталог</a>
                 </li>
-                @auth()
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                           aria-expanded="false">
-                            Ещё
-                        </a>
 
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="{{route('cart')}}">Корзина</a></li>
-                            <li><a class="dropdown-item" href="{{route('orders')}}">Мои заказы</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('dealers')}}">Дилеры</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="{{route('location')}}">Контакты</a>
+                </li>
 
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{{route('logout')}}" class="nav-link">Выход</a>
-                    </li>
-                @else
-                    <a class="nav-link" href="{{route('login')}}">Вход</a>
-                    <a href="{{route('register')}}" class="nav-link">Регистрация</a>
-                @endauth
             </ul>
         </div>
+        <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+            <li class="nav-item dropdown">
+                <a class=" dropdown-toggle nav-link" href="#" role="button" data-toggle="dropdown"
+                   aria-expanded="false"><i class="icon-user"></i>Личный кабинет</a>
+                <div class="dropdown-menu bg">
+                    @auth()
+                        <a class="nav-link" href="{{route('cart')}}"><i class="icon-basket"></i>Корзина</a>
+                        <a class="nav-link" href="{{route('orders')}}"><i class="icon-shopping-bag"></i>Мои заказы</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="{{route('logout')}}" class="nav-link"><i class="icon-logout"></i>Выход</a>
+
+                    @else
+                        <a class="nav-link" href="{{route('login')}}"><i class="icon-login"></i>Войти</a>
+                    @endauth
+
+                </div>
+
+            </li>
+
+        </ul>
     </div>
 </nav>
-
-
 @yield('content')
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
-        crossorigin="anonymous"></script>
+<footer class="footer mt-auto bg">
+        <nav class="navbar navbar-expand navbar-dark container-fluid w-75">
+            <a class="nav-link" href="#"><i  class="icon-vk"></i></a>
+            <a class="nav-link" href="#"><i class="icon-facebook"></i></a>
+            <a class="nav-link" href="#"><i class="icon-twitter"></i></a>
+            <a class="nav-link" href="#"><i class="icon-youtube"></i></a>
+            <a class="nav-link" href="#"><i class="icon-instagram"></i></a>
+        </nav>
+</footer>
 <script src="{{asset('js/jquery.min.js')}}"></script>
 <script src="{{asset('js/bootstrap.min.js')}}"></script>
 @stack('scripts')
@@ -93,6 +97,7 @@
     });
     const addToCart = (itemId, count = 1, reload = false) => {
         $.post('/cart/' + itemId, {count}, data => {
+            // alert(data.message);
             if (reload) location.reload();
         }).fail(err => alert('Ошибка при добавлении товара'))
     }

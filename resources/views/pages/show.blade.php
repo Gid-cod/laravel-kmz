@@ -6,7 +6,7 @@
     <div class="container-fluid w-75 mt-5">
         <div class="row shadow bg-white rounded">
             <div class="col-5 ">
-                <img class="card-img" style="object-fit: cover;" src="{{$item->image}}" alt="{{$item->name}}">
+                <img class="card-img-top" style="object-fit: cover;" src="{{$item->image}}" alt="{{$item->name}}">
             </div>
             <div class="col p-3">
                 <h2 class="mb-2">{{$item->name}}</h2>
@@ -14,6 +14,9 @@
                 <p class="mb-1">Год выпуска: {{$item->model_year}}</p>
                 <p class="mb-1">Модель: {{$item->model_type}}</p>
                 <p class="mb-1">Описание: {{$item->Short_description}}</p>
+
+            </div>
+            <div class="col-3 ">
                 <div class="d-flex align-items-center sticky-top">
                     @auth
                         <p class="card-text col-5 p-2 m-0">Цена: {{$item->price}} р</p>
@@ -22,9 +25,6 @@
                         </button>
                     @endauth
                 </div>
-            </div>
-            <div class="col-3 ">
-
 {{--                @auth--}}
 {{--                    <button data-id="{{$item->id}}" class="btn btn-primary addToCart">В корзину</button>--}}
 {{--                @endauth--}}

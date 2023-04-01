@@ -3,10 +3,16 @@
 @section('title', 'Каталог')
 
 @section('content')
-    <div class="container-fluid w-85">
+    <div class="container-fluid w-85 mt-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{{route('home')}}">О нас</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Каталог</li>
+            </ol>
+        </nav>
         <div class="jumbotron">
             <h1 class="display-4">Каталог</h1>
-            <p class="lead">Продукция "Курганмашзавод"</p>
+            <p class="lea">Продукция "Курганмашзавод"</p>
             <hr class="my-4">
             <p>ПАО «Курганмашзавод» является крупнейшим машиностроительным комплексом Зауралья, оснащенным современным
                 оборудованием, обеспечивающим полный производственный цикл от всех видов механической обработки до

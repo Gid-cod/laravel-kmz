@@ -59,6 +59,7 @@
             </div>
             <div class="custom-file">
                 <input required name="image" type="file" class="custom-file-input" id="inputGroupFile01" accept="image/jpeg,image/png,image/jpg,image/bpm" aria-describedby="inputGroupFileAddon01">
+                <label class="custom-file-label" for="inputGroupFile01">Выбрать файл</label>
             </div>
         </div>
 

@@ -14,8 +14,8 @@
                     <h5 class="card-title">{{$item['item']['name']}}</h5>
                     <p class="card-text">{{$item['item']['price'] * $item['count']}} р.</p>
                     <p class="card-text">{{$item['count']}} шт.</p>
-                    <button data-id="{{$item['item']['id']}}" data-count="1" class="btn btn-success editCart">+</button>
                     <button data-id="{{$item['item']['id']}}" data-count="-1" class="btn btn-danger editCart">-</button>
+                    <button data-id="{{$item['item']['id']}}" data-count="1" class="btn btn-success editCart">+</button>
                 </div>
             </div>
         @empty
@@ -38,7 +38,7 @@
         </div>
         <button type="submit" class="btn btn-success">Оформить заказ</button>
     </form>
-    </div>    
+    </div>
 @endsection
 
 @push('scripts')

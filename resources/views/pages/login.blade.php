@@ -2,23 +2,6 @@
 
 @section('title', 'Авторизация')
 @section('content')
-    {{--    <form class="login-form container">--}}
-    {{--        @method('post')--}}
-    {{--        @csrf--}}
-    {{--        <div class="mb-3">--}}
-    {{--            <label class="form-label">Логин</label>--}}
-    {{--            <input placeholder="Логин" required type="text" name="login" class="form-control"--}}
-    {{--                   aria-describedby="emailHelp">--}}
-    {{--            <span class="text-danger"></span>--}}
-    {{--        </div>--}}
-    {{--        <div class="mb-3">--}}
-    {{--            <label class="form-label">Пароль</label>--}}
-    {{--            <input placeholder="Пароль" required type="password" name="password" class="form-control"--}}
-    {{--                   aria-describedby="emailHelp">--}}
-    {{--            <span class="text-danger"></span>--}}
-    {{--        </div>--}}
-    {{--        <button type="submit" class="btn btn-primary">Войти</button>--}}
-    {{--    </form>--}}
     <div class="sign-in">
         <div class="vxod">
             <div class="sign-form">
@@ -31,13 +14,11 @@
                         @method('post')
                         @csrf
                         <div class="mb-3">
-                            <input placeholder="Логин" required type="text" name="login"
-                                   aria-describedby="emailHelp" class="form-control">
+                            <input placeholder="Логин" required type="text" name="login" aria-describedby="emailHelp" class="form-control">
                             <span class="text-danger"></span>
                         </div>
                         <div class="mb-3">
-                            <input placeholder="Пароль" required type="password" name="password"
-                                   aria-describedby="emailHelp" class="form-control">
+                            <input placeholder="Пароль" required type="password" name="password" aria-describedby="emailHelp" class="form-control">
                             <span class="text-danger"></span>
                         </div>
                         <button type="submit" class="btn btn-outline-success">Войти</button>

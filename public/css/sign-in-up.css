@@ -3,22 +3,28 @@
     margin: auto;
     margin-top: 30px;
 }
+
 .form {
     padding: 20px;
 }
+
 .form-info {
     padding-top: 20px;
 }
-.form-group{
+
+.form-group {
     padding-left: 5px;
 }
-.form1{
+
+.form1 {
     height: auto;
     padding: 20px;
 }
-.form1 h2{
+
+.form1 h2 {
     text-align: center;
 }
+
 .form h2 {
     text-align: center;
 }
@@ -47,11 +53,10 @@ input#checkbox-1-1 {
 }
 
 
-
 .sign-form {
     display: grid;
     justify-items: center;
-    box-shadow: 0 0px 9px 3px rgb(0 0 0 / 8%);
+    box-shadow: 0 0 9px 3px rgb(0 0 0 / 8%);
     border-radius: 20px;
     align-items: center;
 }

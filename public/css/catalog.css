@@ -1,39 +1,53 @@
-.card-group{
+.card-group {
     gap: 10px;
 }
+
 .produkt {
     display: grid;
     grid-template-columns: 30% 1fr;
 }
+
 .cirt {
     display: flex;
     align-items: center;
 }
+
 .cart-img {
     width: 300px;
     height: 250px;
 }
-.w-85{
-    width: 85%!important;
+
+.w-85 {
+    width: 85% !important;
 }
-.flex-wrap{
+
+.flex-wrap {
     gap: 10px;
 }
+
 .cart.me-2 {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-end;
     border-radius: 10px;
 }
+.carb{
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
 p.card-text.col {
     margin-bottom: 0;
     padding: 6px;
     border-radius: 5px;
 }
+
 p.card-text.col {
     padding: 6px;
     margin: 0px;
 }
-.p-1{
-    padding: 6px!important;
+
+.p-1 {
+    padding: 6px !important;
 }
