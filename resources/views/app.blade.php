@@ -72,7 +72,7 @@
 @yield('content')
 <footer class="footer mt-auto bg">
         <nav class="navbar navbar-expand navbar-dark container-fluid w-75">
-            <a class="nav-link" href="#"><i  class="icon-vk"></i></a>
+            <a class="nav-link" href="https://vk.com/paokmz"><i  class="icon-vk"></i></a>
             <a class="nav-link" href="#"><i class="icon-facebook"></i></a>
             <a class="nav-link" href="#"><i class="icon-twitter"></i></a>
             <a class="nav-link" href="#"><i class="icon-youtube"></i></a>
