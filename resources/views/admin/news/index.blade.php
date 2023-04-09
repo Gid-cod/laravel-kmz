@@ -1,6 +1,6 @@
 @extends('admin.index')
 
-@section('title', 'Товары')
+@section('title', 'Новости')
 
 @section('content')
     <a href="{{route('admin.news.createPage')}}" class="btn btn-success mt-3">Создать новость</a>

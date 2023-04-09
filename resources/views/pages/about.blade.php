@@ -14,7 +14,7 @@
                 <video id="myVideo" autoplay="autoplay" muted="muted" loop="loop" playsinline=""
                        class="bg-video__preview">
                     <source
-                        src="public/img/Курганмашзавод%20-%20производство%20гражданской%20техники%20-%201080.mp4">
+                        src="/video/Курганмашзавод%20-%20производство%20гражданской%20техники%20-%201080.mp4">
                 </video>
             </div>
         </div>
@@ -65,6 +65,7 @@
                     - мини-погрузчики с бортовым поворотом;<br>
                     - гусеничные плавающие вездеходы;<br>
                     - автомобильные прицепы;<br>
+                    - Универсальные транспортные средства<br>
                     - кузнечно-литейная продукция.
                 </h5>
             </div>
@@ -146,19 +147,19 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="img-fluid d-block img-center" src="public/img/proiz.jpg" alt="">
+                            <img class="img-fluid d-block img-center" src="/img/proiz.jpg" alt="">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Кузнечно-литейное производство</h5>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="img-fluid d-block img-center" src="public/img/kuznez.jpg" alt="">
+                            <img class="img-fluid d-block img-center" src="/img/kuznez.jpg" alt="">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Кузнечно-литейное производство</h5>
                             </div>
                         </div>
                         <div class="carousel-item ">
-                            <img class="img-fluid d-block img-center" src="public/img/meetal.jpg" alt="">
+                            <img class="img-fluid d-block img-center" src="/img/meetal.jpg" alt="">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Кузнечно-литейное производство</h5>
                             </div>
@@ -177,19 +178,19 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="item carousel-item active">
-                            <img class="img-fluid img-center" src="public/img/nosch.jpg" alt="">
+                            <img class="img-fluid img-center" src="/img/nosch.jpg" alt="">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Красоты вечернего Курганмашзавода</h5>
                             </div>
                         </div>
                         <div class="item left carousel-item">
-                            <img class="img-fluid img-center" src="public/img/nort.jpg" alt="">
+                            <img class="img-fluid img-center" src="/img/nort.jpg" alt="">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Вечный огонь на территории Курганмашзавода</h5>
                             </div>
                         </div>
                         <div class="item next left carousel-item">
-                            <img class="img-fluid img-center" src="public/img/tryt.jpg" alt="">
+                            <img class="img-fluid img-center" src="/img/tryt.jpg" alt="">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Красоты вечернего Курганмашзавода</h5>
                             </div>
@@ -207,13 +208,13 @@
             {{--                    </ol>--}}
             {{--                    <div class="carousel-inner">--}}
             {{--                        <div class="item carousel-item active">--}}
-            {{--                            <img class="img-fluid img-center" src="public/img/mcsm.jpg" alt="">--}}
+            {{--                            <img class="img-fluid img-center" src="/img/mcsm.jpg" alt="">--}}
             {{--                        </div>--}}
             {{--                        <div class="item left carousel-item">--}}
-            {{--                            <img class="img-fluid img-center" src="public/img/mcsm1.jpg" alt="">--}}
+            {{--                            <img class="img-fluid img-center" src="/img/mcsm1.jpg" alt="">--}}
             {{--                        </div>--}}
             {{--                        <div class="item next left carousel-item">--}}
-            {{--                            <img class="img-fluid img-center" src="public/img/mcsm2.jpg" alt="">--}}
+            {{--                            <img class="img-fluid img-center" src="/img/mcsm2.jpg" alt="">--}}
             {{--                        </div>--}}
             {{--                    </div>--}}
             {{--                </div>--}}

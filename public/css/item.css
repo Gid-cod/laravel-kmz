@@ -10,6 +10,11 @@
 .img-fluid{
     border-radius: 10px;
 }
+iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
 
 .bg {
     background-color: #192935 !important;

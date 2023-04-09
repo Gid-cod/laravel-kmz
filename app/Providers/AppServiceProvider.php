@@ -2,6 +2,9 @@
 
 namespace App\Providers;
 
+use App\Service\PaymentService;
+use Illuminate\Http\Resources\Json\JsonResource;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -13,7 +16,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->bind(PaymentService::class, function ($app){
+            return new PaymentService();
+        });
     }
 
     /**
@@ -23,6 +28,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        if($this->app->environment('production')) {
+            URL::forceScheme('https');
+        }
+        JsonResource::withoutWrapping();
     }
 }

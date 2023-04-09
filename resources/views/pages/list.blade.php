@@ -20,7 +20,7 @@
         </div>
         <div class="row mt-5">
             <div class="col-3">
-                <div class="col-9">
+                <div class="col-9 sticky-top">
                     <form method="GET">
                         @method('GET')
                         @csrf

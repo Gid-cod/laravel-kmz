@@ -29,7 +29,6 @@
         </div>
         <div class="col">
             <div class="d-flex flex-wrap">
-
                 @forelse($orders as $order)
                     <div class="p-4 card">
                         @foreach($order->items as $orderItem)
@@ -38,7 +37,7 @@
                                      alt="{{$orderItem['item']['name']}}">
                                 <div class="card-body">
                                     <h5 class="card-title">{{$orderItem['item']['name']}}</h5>
-                                    <p class="card-text">{{$orderItem['price'] * $orderItem['count']}} р.</p>
+                                    <p class="card-text">{{$orderItem['price']}} р.</p>
                                     <p class="card-text">Количество товара: {{$orderItem['count']}} </p>
                                 </div>
                             </div>
@@ -70,12 +69,13 @@
                             </form>
                         @endif
                     </div>
+                @empty
+                    <div>
+                        Еще нет ни одного заказа
+                    </div
+                @endforelse
             </div>
         </div>
-        @empty
-            <div>
-                Еще нет ни одного заказа
-            </div
-        @endforelse
+
     </div>
 @endsection

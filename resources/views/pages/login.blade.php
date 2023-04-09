@@ -6,7 +6,7 @@
         <div class="vxod">
             <div class="sign-form">
                 <div class="form-info">
-                    <img class="sign-i" src="public/img/free-icon-user-1177568.png" alt="">
+                    <img class="sign-i" src="/img/free-icon-user-1177568.png" alt="">
                 </div>
                 <div class="form">
                     <h2>Вход в личный кабинет</h2>

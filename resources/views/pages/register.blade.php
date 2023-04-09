@@ -7,7 +7,7 @@
         <div class="vxod">
             <div class="sign-form">
                 <div class="form-info">
-                    <img class="sign-i" src="public/img/free-icon-user-1177443 (1).png" alt="">
+                    <img class="sign-i" src="/img/free-icon-user-1177443 (1).png" alt="">
                 </div>
                 <div class="form1">
                     <h2>Регистрация</h2>

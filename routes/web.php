@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\NewsController;
+use \App\Http\Controllers\PaymentController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AdminController;
@@ -20,6 +21,8 @@ use App\Http\Controllers\PageController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::match(['GET','POST'], '/payments/callback',[PaymentController::class , 'callback'])->name('payment.callback');
+
 
 // Главная
 Route::get('/', [PageController::class, 'index'])->name('home');
@@ -31,6 +34,9 @@ Route::get('/orders', [OrderController::class, 'index'])->name('orders');
 Route::get('/new', [PageController::class, 'new'])->name('new');
 Route::get('/list', [PageController::class, 'list'])->name('list');
 Route::get('/list/{item}', [PageController::class, 'show'])->name('show');
+
+// Yookassa notification
+Route::post("/notification", [PaymentController::class, 'handleNotification']);
 
 // Вход
 Route::prefix('login')-> group(function() {

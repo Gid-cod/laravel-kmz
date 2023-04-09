@@ -9,7 +9,8 @@ class CategoryController extends Controller
 {
     public function create(Request $request) {
         $name = $request->get('name');
-        Category::create(compact('name'));
+        $id = $request->get('id');
+        Category::create(compact('name','id'));
         return redirect()->route('admin.categories.index');
     }
 

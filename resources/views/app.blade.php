@@ -5,24 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Kmz.ru - @yield('title')</title>
-    <link rel="shortcut icon" href="public/img/icons.png" type="image/png">
+    <link rel="shortcut icon" href="/img/icons.png" type="image/png">
     <!-- Fonts -->
-    <link rel="stylesheet" href="public/css/style.css">
-    <link rel="stylesheet" href="public/css/style2.css">
-    <link rel="stylesheet" href="public/css/contact.css">
-    <link rel="stylesheet" href="public/css/sign-in-up.css">
-    <link rel="stylesheet" href="{{asset('css/fontello.css')}}">
-    <link rel="stylesheet" href="{{asset('css/catalog.css')}}">
-    <link rel="stylesheet" href="{{asset('css/item.css')}}">
-    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style2.css">
+    <link rel="stylesheet" href="/css/sign-in-up.css">
+    <link rel="stylesheet" href="/css/fontello.css">
+    <link rel="stylesheet" href="/css/catalog.css">
+    <link rel="stylesheet" href="/css/item.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
 
 
 </head>
 <body class="d-flex flex-column h-100">
 <nav class="navbar navbar-expand  navbar-dark bg">
     <div class="container-fluid w-75">
-        <a class="navbar-brand" href="{{route('home')}}"><img class="header-logo" src="{{asset('img/Ресурс%204.png')}}"
-                                                              alt="logo"></a>
+        <a class="navbar-brand" href="{{route('home')}}"><img class="header-logo" src="/img/Ресурс%204.png" alt="logo"></a>
         <div class="collapse navbar-collapse" id="navbarScroll">
             <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
                 <li class="nav-item active">
@@ -71,16 +69,17 @@
 </nav>
 @yield('content')
 <footer class="footer mt-auto bg">
-        <nav class="navbar navbar-expand navbar-dark container-fluid w-75">
-            <a class="nav-link" href="https://vk.com/paokmz"><i  class="icon-vk"></i></a>
-            <a class="nav-link" href="#"><i class="icon-facebook"></i></a>
-            <a class="nav-link" href="#"><i class="icon-twitter"></i></a>
-            <a class="nav-link" href="#"><i class="icon-youtube"></i></a>
-            <a class="nav-link" href="#"><i class="icon-instagram"></i></a>
-        </nav>
+    <nav class="navbar navbar-expand navbar-dark container-fluid w-75">
+        <a class="nav-link" href="https://vk.com/paokmz"><i class="icon-vk"></i></a>
+        <a class="nav-link" href="https://www.facebook.com/groups/paokmz/"><i class="icon-facebook"></i></a>
+        <a class="nav-link" href="https://twitter.com/nXXbY0ywoV0Cfgf"><i class="icon-twitter"></i></a>
+        <a class="nav-link" href="https://www.youtube.com/channel/UCe14rv3AjibiHNt11hzmcoQ?view_as=subscriber"><i
+                class="icon-youtube"></i></a>
+        <a class="nav-link" href="https://www.instagram.com/kurganmashzavod/"><i class="icon-instagram"></i></a>
+    </nav>
 </footer>
-<script src="{{asset('js/jquery.min.js')}}"></script>
-<script src="{{asset('js/bootstrap.min.js')}}"></script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 @stack('scripts')
 <script>
 

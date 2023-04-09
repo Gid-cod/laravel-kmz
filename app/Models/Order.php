@@ -8,10 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Order extends Model
 {
     use HasFactory;
+    public function payment()
+    {
+        return $this->hasOne(Payment::class);
+    }
 
-    protected $fillable = [
-      'user_id', 'finalPrice', 'items', 'description', 'status'
-    ];
+    protected $guarded = false;
 
     protected $casts = [
         'items' => 'array'

@@ -27,7 +27,7 @@
         <div class="row gap">
 
             <div class="card shadow p-3 mb-5 bg-white rounded border-0" style="width: 28rem;">
-                <img src="public/img/free-icon-contact-3188213.png" class="card-top" alt="...">
+                <img src="/img/free-icon-contact-3188213.png" class="card-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Контакты ПАО"Курганмашзаавод"</h5>
                 </div>
@@ -48,7 +48,7 @@
                 {{--                </ul>--}}
             </div>
             <div class="card shadow p-3 mb-5 bg-white rounded border-0" style="width: 29rem;">
-                <img src="public/img/free-icon-repair-service-7967066.png" class="card-top" alt="...">
+                <img src="/img/free-icon-repair-service-7967066.png" class="card-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Гарантийное и сервисное обслуживание</h5>
                 </div>
@@ -63,7 +63,7 @@
                 </ul>
             </div>
             <div class="card shadow p-3 mb-5 bg-white rounded border-0" style="width: 28rem;">
-                <img src="public/img/free-icon-boss-1281445.png" class="card-top" alt="...">
+                <img src="/img/free-icon-boss-1281445.png" class="card-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Отдел продаж ПАО «Курганмашзавод»</h5>
                 </div>
