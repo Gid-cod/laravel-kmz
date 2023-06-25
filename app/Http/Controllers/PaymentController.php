@@ -85,6 +85,7 @@ class PaymentController extends Controller
             return response()->json(['errors' => $validator->errors()], 422);
         }
 
+
         $validatedData = $validator->validated();
         $item = new Payment();
         $item->user_id = $validatedData["user"]->id;
@@ -101,7 +102,7 @@ class PaymentController extends Controller
                 ),
                 'confirmation' => array(
                     'type' => 'redirect',
-                    'return_url' => 'url',
+                    'return_url' => $validatedData["url"],
                 ),
                 'capture' => true,
                 'description' => 'Оплата заказа № ' . $validatedData["order_id"] . " для " . $validatedData["user"]->email,

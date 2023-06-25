@@ -3,9 +3,9 @@
 @section('title', 'Создание товара')
 
 @section('content')
-<h2 class="mt-2">Создание товара</h2>
+<h2 class="mt-3">Создание товара</h2>
 
-<form method="post" action="{{route('admin.items.create')}}" enctype="multipart/form-data">
+<form class="mt-5 mb-5" method="post" action="{{route('admin.items.create')}}" enctype="multipart/form-data">
     @csrf
     <div class="mb-3">
         <label class="form-label">Название товара</label>
@@ -33,7 +33,7 @@
     </div>
     <div class="mb-3">
         <label class="form-label">Цена товара</label>
-        <input required type="text" name="price" class="form-control">
+        <input required type="number" name="price" class="form-control">
     </div>
     <div class="mb-3">
         <label class="form-label">Количество товара</label>
@@ -64,6 +64,6 @@
         </div>
 
     </div>
-    <button type="submit" class="btn btn-primary">Создать</button>
+    <button type="submit" class="btn btn-primary"><i class="bi bi-plus-square"></i> Создать</button>
 </form>
 @endsection

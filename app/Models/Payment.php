@@ -10,4 +10,7 @@ class Payment extends Model
     use HasFactory;
 
     protected $guarded = false;
+    public function user(){
+        return $this->hasOne(User::class);
+    }
 }

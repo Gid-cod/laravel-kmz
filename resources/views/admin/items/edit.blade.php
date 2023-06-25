@@ -3,7 +3,7 @@
 @section('title', 'Редактирование товара')
 
 @section('content')
-    <form method="post" action="{{route('admin.items.edit', $item)}}" enctype="multipart/form-data">
+    <form class="mb-3 mt-3" method="post" action="{{route('admin.items.edit', $item)}}" enctype="multipart/form-data">
         @method('post')
         @csrf
         <div class="mb-3">
@@ -33,7 +33,7 @@
         </div>
         <div class="mb-3">
             <label class="form-label">Цена товара</label>
-            <input required value="{{$item->price}}" type="text" name="price" class="form-control">
+            <input required value="{{$item->price}}" type="number" name="price" class="form-control">
         </div>
         <div class="mb-3">
             <label class="form-label">Количество товара</label>
@@ -57,11 +57,11 @@
                     <span class="input-group-text" id="inputGroupFileAddon01">Изображение товара</span>
                 </div>
                 <div class="custom-file">
-                    <input required name="image" type="file" class="custom-file-input" id="inputGroupFile01" accept="image/jpeg,image/png,image/jpg,image/bpm" aria-describedby="inputGroupFileAddon01">
+                    <input  name="image" type="file" class="custom-file-input" id="inputGroupFile01" accept="image/jpeg,image/png,image/jpg,image/bpm" aria-describedby="inputGroupFileAddon01">
                     <label class="custom-file-label" for="inputGroupFile01">Выберите файл</label>
                 </div>
             </div>
         </div>
-        <button type="submit" class="btn btn-primary">Обновить</button>
+        <button type="submit" class="btn btn-primary"><i class="bi bi-pencil-square"></i> Обновить</button>
     </form>
 @endsection

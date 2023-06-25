@@ -15,8 +15,7 @@ class ProductSeeder extends Seeder
     public function run()
     {
 //        Item::create([
-//
-//        ]);
+//            ]);
 
 
     }

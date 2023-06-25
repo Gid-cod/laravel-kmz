@@ -3,33 +3,43 @@
 namespace App\Http\Controllers;
 
 use App\Http\Resources\OrderResource;
-use App\Service\PaymentService;
+use App\Models\Payment;
 use Illuminate\Http\Request;
 use App\Models\Order;
+use Illuminate\Support\Facades\Auth;
 
 class OrderController extends Controller
 {
     public function index(Request $request)
     {
+        $user = Auth::user();
         $orders = $this->user->orders;
+        $items = $this->user->items;
         $orders = OrderResource::collection($orders);
-        return view('pages.orders', compact('orders'));
+        $finalPrice = collect($items)->sum('price');
+        $finalCount = collect($orders)->sum('count');
+        return view('pages.orders', compact('orders','items','finalCount','finalPrice','user'));
+    }
+
+    public function payments()
+    {
+        $payments = Payment::all();
+        return $this->get('payments.status')->name;
     }
 
     public function store(Request $request)
     {
-        $password = $request->get('password', '');
-        if ($password !== $this->user->password) return ['error' => 'Неверный пароль'];
-
         $items = $this->user->carts->toArray();
         $finalPrice = collect($items)->sum('price');
+
 
         if ($finalPrice < 1) return ['error' => 'Добавьте товары в корзину'];
 
         $order = $this->user->orders()->create([
             'items' => $items,
-            'finalPrice' => $finalPrice
+            'finalPrice' => $finalPrice,
         ]);
+
 
         foreach ($this->user->carts as $orderItem) {
             $orderItem->item->available -= $orderItem->count;
@@ -44,7 +54,7 @@ class OrderController extends Controller
             "user" => $this->user,
         ]);
         if (!empty($pay["errors"])) {
-            return response()->json($pay,422);
+            return response()->json($pay, 422);
         }
         $this->user->carts()->delete();
 

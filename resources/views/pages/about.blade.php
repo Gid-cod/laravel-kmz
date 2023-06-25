@@ -5,7 +5,7 @@
 @section('content')
     <div class="container mt-3 cart shadow-lg bg-white rounded-lg-3 me-2 mb-3">
         <div class="card-text mb-5">
-            <h2 class="display-5 pl-3 mt-3 "><span class="text-warning">О компании. </span>Лучший производитель<br>в
+            <h2 class="display-5 pl-3 mt-3 "><span class="" style="color: #005cbf">О компании. </span>Лучший производитель<br>в
                 своей
                 области<br></h2>
         </div>
@@ -21,9 +21,9 @@
 
         <div class="card-text mb-5">
             <hr>
-            <p class="card-text pl-3"><i class="icon-dot-circled" style="font-size: 15px; color: #ffc107;"></i>Коротко о нас</p>
+            <p class="card-text pl-3"><i class="icon-dot-circled" style="font-size: 15px;color: #005cbf"></i>Коротко о нас</p>
             <h2 class="display-5 pl-3 mt-3 col-10">
-                ПАО «Курганский машиностроительный завод» (КМЗ) <span class="text-warning">-единственное в России предприятие по производству
+                ПАО «Курганский машиностроительный завод» (КМЗ) <span class="" style="color: #005cbf">-единственное в России предприятие по производству
                 боевых машин пехоты (БМП) и их модификаций </span> . С 2019 года входит в холдинг «Высокоточные
                 комплексы»
                 Госкорпорации Ростех.
@@ -53,7 +53,7 @@
                 </div>
             </div>
             <div class="col">
-                <h5 class="display-5 card-text  pl-4"><span class="text-warning">ПАО «Курганмашзавод»</span><br>
+                <h5 class="display-5 card-text  pl-4"><span style="color: #005cbf">ПАО «Курганмашзавод»</span><br>
                     является крупнейшим машиностроительным комплексом Зауралья, оснащенным
                     современным оборудованием, обеспечивающим полный производственный цикл от всех видов механической
                     обработки до сборки и комплексных испытаний готовой продукции.
@@ -61,7 +61,7 @@
                 <hr>
                 <h5 class="display-5 card-text  pl-4">
                     Освоено производство широкого ассортимента продукции<br>
-                    <span class="text-warning">гражданского назначения:</span><br>
+                    <span style="color: #005cbf">гражданского назначения:</span><br>
                     - мини-погрузчики с бортовым поворотом;<br>
                     - гусеничные плавающие вездеходы;<br>
                     - автомобильные прицепы;<br>
@@ -72,31 +72,31 @@
         </div>
         <div class="card-text mb-5">
             <hr>
-            <p class="card-text pl-3"><i class="icon-dot-circled" style="font-size: 15px; color: #ffc107;"></i>Краткая история</p>
+            <p class="card-text pl-3"><i class="icon-dot-circled" style="font-size: 15px; color: #005cbf"></i>Краткая история</p>
             <div class="  pl-3 mt-3 col-10">
                 <div class="history"><h4 class="display-5 card-text  pl-4"><span
-                            class="text-warning">1 июля 1950 года</span><br> Курганскому
+                            style="color: #005cbf">1 июля 1950 года</span><br> Курганскому
                         крановому заводу установлен государственный план. Свою первую продукцию — редуктор РМ-350
                         «Курганский завод тяжелых кранов» выпустил 6 июля 1950 года. Основной ассортимент завода
                         составляли
                         узлы и детали кранов, редукторы РМ-350, РМ-400, РМ-500, РМ-650, 5-тонные краны.</h4></div>
                 <div class="history"><h4 class="display-5 card-text  pl-4"><span
-                            class="text-warning">25 июня 1954 года</span><br> Курганский
+                            style="color: #005cbf">25 июня 1954 года</span><br> Курганский
                         завод кранового оборудования переименовывают в «Курганский машиностроительный завод», а уже
                         через
                         год КМЗ начинает производить Изделие 712 средний артиллерийский тягач АТ-С. Первые 2 АТС вышли
                         из
                         ворот завода 15 марта 1955 года.</h4></div>
-                <div class="history"><h4 class="display-5 card-text  pl-4"><span class="text-warning">В 1967 году</span><br>
+                <div class="history"><h4 class="display-5 card-text  pl-4"><span style="color: #005cbf">В 1967 году</span><br>
                         Осуществляет
                         серийный выпуск боевой машины пехоты БМП-1.</h4></div>
-                <div class="history"><h4 class="display-5 card-text  pl-4"><span class="text-warning">В 1971 году</span><br>
+                <div class="history"><h4 class="display-5 card-text  pl-4"><span style="color: #005cbf">В 1971 году</span><br>
                         За организацию
                         выпуска БМП коллектив завода указом Президиума Верховного Совета СССР награждён орденом
                         Трудового
                         Красного Знамени. 175 заводчан награждены орденами и медалями. Резьбошлифовщик инструментального
                         цеха В.С. Епишев стал Героем Социалистического Труда.</h4></div>
-                <div class="history"><h4 class="display-5 card-text  pl-4"><span class="text-warning">В 1975 году</span><br>
+                <div class="history"><h4 class="display-5 card-text  pl-4"><span style="color: #005cbf">В 1975 году</span><br>
                         Коллектив КМЗ
                         досрочно выполнил план по реализации продукции и, повысив производительность труда в 2 раза,
                         стал
@@ -105,26 +105,26 @@
                         обязательств IX пятилетки 234 труженика завода награждены орденами и медалями. Электросварщик
                         Н.Т.
                         Атаманюк стал Героем Социалистического Труда.</h4></div>
-                <div class="history"><h4 class="display-5 card-text  pl-4"><span class="text-warning">В феврале 1978 года</span><br>
+                <div class="history"><h4 class="display-5 card-text  pl-4"><span style="color: #005cbf">В феврале 1978 года</span><br>
                         Курганскому машиностроительному заводу присвоено имя В.И. Ленина.</h4></div>
-                <div class="history"><h4 class="display-5 card-text  pl-4"><span class="text-warning">В 1980 году</span><br>
+                <div class="history"><h4 class="display-5 card-text  pl-4"><span style="color: #005cbf">В 1980 году</span><br>
                         Осуществляет
                         серийный выпуск боевой машины пехоты БМП-2.</h4></div>
-                <div class="history"><h4 class="display-5 card-text  pl-4"><span class="text-warning">В 1987 году</span><br>
+                <div class="history"><h4 class="display-5 card-text  pl-4"><span style="color: #005cbf">В 1987 году</span><br>
                         завод перешел на
                         производство БМП-3, которая по сей день остается одной из лучших машин в мире в своем
                         3 классе.</h4></div>
-                <div class="history"><h4 class="display-5 card-text  pl-4"><span class="text-warning">В 2016 году</span><br>
+                <div class="history"><h4 class="display-5 card-text  pl-4"><span style="color: #005cbf">В 2016 году</span><br>
                         Курганмашзавод в
                         рамках государственного оборонного заказа начал поставлять Российской армии
                         модернизированные десантные машины – БМД-4М и БТР-МДМ.</h4></div>
-                <div class="history"><h4 class="display-5 card-text  pl-4"><span class="text-warning">С 24 января 2019 года</span><br>
+                <div class="history"><h4 class="display-5 card-text  pl-4"><span style="color: #005cbf">С 24 января 2019 года</span><br>
                         На
                         Курганмашзаводе изменена организационно-правовая форма — с ОАО на ПАО. Теперь полное фирменное
                         наименование Общества — Публичное акционерное общество «Курганский машиностроительный завод»,
                         сокращенное — ПАО «Курганмашзавод». В Единый государственный реестр юридических лиц внесены
                         соответствующие изменения.</h4></div>
-                <div class="history"><h4 class="display-5 card-text  pl-4"><span class="text-warning">21 февраля 2019 года</span><br>
+                <div class="history"><h4 class="display-5 card-text  pl-4"><span style="color: #005cbf">21 февраля 2019 года</span><br>
                         Состоялась сделка по приобретению 74,5 % акций ПАО «Курганмашзавод». Покупателем акций выступило
                         АО
                         НПО «Высокоточные комплексы», входящее в состав ГК «Ростех». Таким образом, передача предприятий

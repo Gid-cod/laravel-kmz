@@ -20,10 +20,10 @@ return new class extends Migration
             $table->string('model_year');
             $table->string('model_type');
             $table->string('image');
-            $table->string('price');
+            $table->integer('price');
             $table->integer('available')->default(0);
-            $table->string('info');
-            $table->string('Short_description');
+            $table->string('info',10000);
+            $table->string('Short_description',5000);
             $table->foreignId('category_id')
                 ->constrained('categories')
                 ->onUpdate('cascade')

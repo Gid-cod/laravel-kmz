@@ -4,13 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Item;
+use Illuminate\Support\Facades\Auth;
 
 class CartController extends Controller
 {
     public function index() {
+        $user = Auth::user();
         $items = $this->user->carts->toArray();
         $finalPrice = collect($items)->sum('price');
-        return view('pages.cart', compact('items', 'finalPrice'));
+        $finalCount = collect($items)->sum('available');
+        return view('pages.cart', compact('items', 'finalPrice','finalCount','user'));
     }
 
     public function add(Request $request, Item $item) {

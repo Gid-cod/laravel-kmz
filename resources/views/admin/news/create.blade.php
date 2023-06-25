@@ -3,10 +3,11 @@
 @section('title', 'Создание товара')
 
 @section('content')
-<h2 class="mt-2">Создание товара</h2>
+<h2 class="mt-2">Создание новости</h2>
 
 <form method="post" action="{{route('admin.news.create')}}" enctype="multipart/form-data">
     @csrf
+    @method('post')
     <div class="mb-3">
         <label class="form-label">Заголовок</label>
         <input required type="text" name="name" class="form-control">
@@ -24,10 +25,10 @@
             <div class="input-group-prepend">
                 <label class="input-group-text">Категория</label>
             </div>
-            <select required name="category_id" class="custom-select" aria-label="Default select example">
+            <select required name="type_id" class="custom-select" aria-label="Default select example">
                 <option value="">Все</option>
-                @foreach($categories as $category)
-                    <option value="{{$category->id}}">{{$category->name}}</option>
+                @foreach($types as $types)
+                    <option value="{{$types->id}}">{{$types->name}}</option>
                 @endforeach
             </select>
         </div>

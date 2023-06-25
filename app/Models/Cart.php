@@ -23,6 +23,7 @@ class Cart extends Model
           'count' => $this->count,
           'item' => $this->item,
           'price' => $this->item->price * $this->count,
+          'available' => $this->item->count + $this->count,
         ];
     }
 }

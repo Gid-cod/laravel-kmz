@@ -21,6 +21,7 @@ class Access
 
         if($user->role !== $role) abort(403);
 
+
         return $next($request);
     }
 }

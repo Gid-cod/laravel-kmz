@@ -3,17 +3,11 @@
 @section('title', 'Дилеры компании')
 @section('content')
     <div class="container-fluid w-85 mt-3">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{{route('home')}}">Главная</a></li>
-                <li class="breadcrumb-item"><a href="{{route('list')}}">Каталог</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Дилеры</li>
-            </ol>
-        </nav>
         <div class="row gap">
             <div class="col-3 ">
-                <h4 class="card-title">Дилеры</h4>
+
                 <div class="list-group sticky-top">
+                    <h4 class="card-title">Дилеры</h4>
                     <a class="list-group-item d-flex justify-content-between align-items-center list-group-item-action"
                        type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
                        aria-controls="collapseOne">Курган<span class="badge badge-primary badge-pill">6</span></a>

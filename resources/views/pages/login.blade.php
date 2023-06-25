@@ -1,36 +1,27 @@
-@extends('app')
+@extends('none')
 
 @section('title', 'Авторизация')
 @section('content')
-    <div class="sign-in">
-        <div class="vxod">
-            <div class="sign-form">
-                <div class="form-info">
-                    <img class="sign-i" src="/img/free-icon-user-1177568.png" alt="">
-                </div>
-                <div class="form">
-                    <h2>Вход в личный кабинет</h2>
-                    <form class="login-form container">
-                        @method('post')
-                        @csrf
-                        <div class="mb-3">
-                            <input placeholder="Логин" required type="text" name="login" aria-describedby="emailHelp" class="form-control">
-                            <span class="text-danger"></span>
-                        </div>
-                        <div class="mb-3">
-                            <input placeholder="Пароль" required type="password" name="password" aria-describedby="emailHelp" class="form-control">
-                            <span class="text-danger"></span>
-                        </div>
-                        <button type="submit" class="btn btn-outline-success">Войти</button>
-                        <a href="{{route('register')}}" type="button" class="btn btn-primary">Зарегистрироваться</a>
-                    </form>
-
-
-                </div>
-            </div>
+    <form class="login-form form-signin text-center">
+        @method('post')
+        @csrf
+        <img class="mb-4" src="/img/Ресурс%2015.png" alt="logo" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Авторизация</h1>
+        <div class="mb-3 text-left">
+        <input placeholder="Логин" required type="text" name="login" aria-describedby="emailHelp"
+               class="form-control">
+        <span class="text-danger"></span>
         </div>
-
-    </div>
+        <div class="mb-3 text-left">
+        <input placeholder="Пароль" required type="password" name="password" aria-describedby="emailHelp"
+               class="form-control">
+        <span class="text-danger"></span>
+        </div>
+        <button  type="submit" class="btn btn-lg btn-block btn-outline-success">Войти</button>
+        <p class="mt-0 mb-0 text-muted">или</p>
+        <a  href="{{route('register')}}" type="button" class="btn btn-block btn-lg btn-outline-primary">Зарегистрироваться</a>
+        <p class="mt-5 mb-3 text-muted">© 2023</p>
+    </form>
 @endsection
 
 @push('scripts')

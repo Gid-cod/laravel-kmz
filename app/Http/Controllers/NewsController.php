@@ -8,12 +8,13 @@ use Carbon\Carbon;
 
 class NewsController extends Controller
 {
+
     public function create(Request $request) {
         $path = $request->file('image')->store('public');
         $path = str_replace('public', '/storage', $path);
 
         $news = News::create([
-            'category_id' => $request->category_id,
+            'type_id' => $request->type_id,
             'name' => $request->name,
             'Short_description' => $request->Short_description,
             'info' => $request->info,
@@ -25,7 +26,7 @@ class NewsController extends Controller
 
     public function edit(Request $request, News $news) {
         $params = [
-            'category_id' => $request->category_id,
+            'type_id' => $request->type_id,
             'name' => $request->name,
             'Short_description' => $request->Short_description,
             'info' => $request->info,

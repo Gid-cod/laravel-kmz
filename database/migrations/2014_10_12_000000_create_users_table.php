@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
+            $table->string('photo')->nullable();
+            $table->string('photo_cover')->nullable();
+            $table->string('telephone')->nullable();
+            $table->string('birthday')->nullable();
             $table->string('name');
             $table->string('surname');
             $table->string('patronymic')->nullable();

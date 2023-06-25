@@ -1,6 +1,4 @@
 .sign-in {
-    max-width: 22%;
-    margin: auto;
     margin-top: 30px;
 }
 
@@ -56,8 +54,6 @@ input#checkbox-1-1 {
 .sign-form {
     display: grid;
     justify-items: center;
-    box-shadow: 0 0 9px 3px rgb(0 0 0 / 8%);
-    border-radius: 20px;
     align-items: center;
 }
 

@@ -22,6 +22,7 @@ class OrderResource extends JsonResource
             'items' => $this->items,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
+            'count' => $this->count,
         ];
 
         $payment = $this->payment;

@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="container-fluid w-75 mt-5">
-        <div class="row shadow bg-white rounded">
+        <div class="row shadow bg-white rounded mb-5">
             <div class="col-5 ">
                 <img class="card-img-top" style="object-fit: cover;" src="{{$item->image}}" alt="{{$item->name}}">
             </div>
@@ -13,47 +13,38 @@
                 <p class="mb-1">Производство : {{$item->model_country}}</p>
                 <p class="mb-1">Год выпуска: {{$item->model_year}}</p>
                 <p class="mb-1">Модель: {{$item->model_type}}</p>
-                <p class="mb-1">Описание: {{$item->Short_description}}</p>
-
-            </div>
-            <div class="col-3 ">
-                <div class="d-flex align-items-center sticky-top">
+                <h6 class="mb-1 ">Описание:</h6>
+                <p class="mb-1 ">{{$item->Short_description}}</p>
+                <h6 class="mb-1">Дополнительное описание: </h6>
+                <p class="mb-1">{{$item->info}}</p>
+                <div class="d-flex align-items-center rounded justify-content-between border border-info mt-3">
                     @auth
-                        <p class="card-text col-5 p-2 m-0">Цена: {{$item->price}} р</p>
-                        <button data-id="{{$item->id}}" class="btn btn-primary  addToCart col-5 p-2">В
+                        <p class="text-dark   p-2 m-0">Цена: {{$item->price}} р</p>
+                        <button type="button" data-id="{{$item->id}}"
+                                class="btn btn-primary  addToCart col-5 liveToastBtn">В
                             корзину
                         </button>
+                        <div class="position-fixed bottom-0 right-0 p-3"
+                             style="z-index: 5; right: 0; bottom: 0;">
+                            <div id="liveToast" class="toast hide" role="alert" aria-live="assertive"
+                                 aria-atomic="true" data-delay="1000">
+                                <div class="toast-header">
+                                    <strong class="mr-auto">Уведомление</strong>
+                                    <small></small>
+                                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast"
+                                            aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="toast-body">
+                                    Товар добавлен в корзину
+                                </div>
+                            </div>
+                        </div>
                     @endauth
                 </div>
-{{--                @auth--}}
-{{--                    <button data-id="{{$item->id}}" class="btn btn-primary addToCart">В корзину</button>--}}
-{{--                @endauth--}}
-
             </div>
         </div>
-        <p>
-            <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Описание</a>
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
-
-        </p>
-        <div class="row">
-            <div class="col">
-                <div class="collapse multi-collapse" id="multiCollapseExample1">
-                    <div class="card card-body">
-                       <p class="text-justify">{{$item->info}}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="collapse multi-collapse" id="multiCollapseExample2">
-                    <div class="card card-body">
-                        Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
     </div>
 
 @endsection
