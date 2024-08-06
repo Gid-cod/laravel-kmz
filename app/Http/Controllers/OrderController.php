@@ -17,10 +17,13 @@ class OrderController extends Controller
         $items = $this->user->items;
         $orders = OrderResource::collection($orders);
         $finalPrice = collect($items)->sum('price');
-        $finalCount = collect($orders)->sum('count');
-        return view('pages.orders', compact('orders','items','finalCount','finalPrice','user'));
+        return view('pages.orders', compact('orders','items','finalPrice','user'));
     }
-
+    public function count()
+    {
+        $count = Order::count();
+        return response()->json(['count' => $count]);
+    }
     public function payments()
     {
         $payments = Payment::all();

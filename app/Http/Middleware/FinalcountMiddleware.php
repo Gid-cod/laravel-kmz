@@ -15,12 +15,14 @@ class FinalcountMiddleware
      * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
      * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
      */
-    public function handle($request, Closure $next)
+    public function handle(Request $request, Closure $next)
     {
         $user = auth()->user();
-        $items = $user->carts->toArray();
-        $finalCount = collect($items)->sum('available');
-        view()->share('finalCount', $finalCount);
+        if (!empty($user->carts)) {
+            $items = $user->carts->toArray();
+            $finalCount = collect($items)->sum('available');
+            view()->share('finalCount', $finalCount);
+        }
         return $next($request);
     }
 }

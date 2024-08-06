@@ -11,6 +11,7 @@
             @forelse($orders as $order)
             <ul class="list-group mb-3">
                 @foreach($order->items as $orderItem)
+                    {{$finalCount}}
                 <li class="list-group-item d-flex justify-content-between align-items-center lh-condensed">
                     <div class="col-2">
                         <div class="card-body">

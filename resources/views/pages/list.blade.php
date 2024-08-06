@@ -78,10 +78,7 @@
                                     @auth
                                         <p class="card-text col" style="vertical-align: inherit">Цена: {{$item->price}}
                                             р</p>
-                                        <button type="button" data-id="{{$item->id}}"
-                                                class="btn btn-primary  addToCart col-5 liveToastBtn">В
-                                            корзину
-                                        </button>
+                                        <a type="button" data-id="{{$item->id}}" class="btn btn-outline-success addToCart  liveToastBtn">В корзину <i class="bi bi-bag-plus"></i></a>
                                         <div class="position-fixed bottom-0 right-0 p-3"
                                              style="z-index: 5; right: 0; bottom: 0;">
                                             <div id="liveToast" class="toast hide" role="alert" aria-live="assertive"

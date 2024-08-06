@@ -68,7 +68,7 @@
                 <div class="dropdown-menu bg">
                     @auth()
                         <a href="{{route('profil')}}" class="nav-link"><i class="bi bi-person-vcard-fill" style="width: 20px"></i>Профиль</a>
-                        <a class="nav-link" href="{{route('cart')}}"><i class="icon-basket"></i>Корзина <span class="badge badge-light ml-2">{{$finalCount}}</span></a>
+                        <a class="nav-link" href="{{route('cart')}}"><i class="icon-basket"></i>Корзина <span class="badge badge-danger ml-2">{{$finalCount}}</span></a>
                         <a class="nav-link" href="{{route('orders')}}"><i class="icon-shopping-bag"></i>Мои заказы</a>
                         <div class="dropdown-divider"></div>
                         <a href="{{route('logout')}}" class="nav-link"><i class="icon-logout"></i>Выход</a>

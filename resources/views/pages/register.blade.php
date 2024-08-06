@@ -59,7 +59,7 @@
 
         <p class="mt-0 mb-0 text-muted">или</p>
         <a href="{{route('login')}}" type="submit" class="btn btn-block btn-outline-primary">Авторизоваться</a>
-        <p class="mt-5 mb-3 text-muted">© 2023</p>
+        <p class="mt-5 mb-3 text-muted">© 2024</p>
     </form>
 
 @endsection

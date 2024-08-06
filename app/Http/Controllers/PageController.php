@@ -19,14 +19,12 @@ class PageController extends Controller
 {
     public function index(Request $request, Item $items)
     {
-        $items = $this->user->carts->toArray();
-        $finalCount = collect($items)->sum('available');
         $user = Auth::user();
         $news = News::orderByDesc('id')->limit(4)->get();
         $news-> created_at = $request-> get('created_at');
         $date = Carbon::parse($news->created_at);
         $types = Type::get();
-        return view('pages.index', compact('news','items', 'user','finalCount','types','date'));
+        return view('pages.index', compact('news','items', 'user','types','date'));
     }
 
     public function editprofil(){
